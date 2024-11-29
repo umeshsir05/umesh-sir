@@ -326,6 +326,7 @@ a:hover {
 
         .about p {
             margin: 1rem 0;
+			text-align:justify;
         }
 
         .about .skills, .about .goals {
