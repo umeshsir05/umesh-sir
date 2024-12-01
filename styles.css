@@ -1,0 +1,273 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #0d1117;
+  color: #c9d1d9;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #161b22;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  color: #58a6ff;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.navbar .menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .menu li a {
+  color: #c9d1d9;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+  color: #58a6ff;
+}
+
+/* Responsive Menu Button */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #c9d1d9;
+}
+
+/* Hero Section */
+header {
+  padding: 100px 20px 40px;
+  text-align: center;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.intro {
+  max-width: 600px;
+}
+
+.profile img {
+  width: 300px;
+  height: 350px;
+  border-radius: 20px;
+  background-color: #161b22;
+
+  border: 2px solid #58a6ff;
+  alignment-adjust:central;}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #161b22;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+  /*  padding: 10px;*/
+    border-radius: 5px;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #121212;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hides the menu by default in mobile view */
+.navbar .menu {
+  display: none;
+  flex-direction: column;
+  background-color: #121212;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  width: 200px;
+  padding: 10px 0;
+  border-radius: 10px;
+}
+
+.navbar .menu.active {
+  display: flex;
+}
+
+.navbar .menu li {
+  text-align: center;
+}
+
+.navbar .menu a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  display: block;
+}
+
+.navbar .menu a:hover {
+  background-color: #333;
+  border-radius: 5px;
+}
+
+/* Hamburger menu styles */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+/* Show the hamburger menu in mobile view */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+}
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #121212;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hides the menu by default in mobile view */
+.navbar .menu {
+  display: none;
+  flex-direction: column;
+  background-color: #121212;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  width: 200px;
+  padding: 10px 0;
+  border-radius: 10px;
+}
+
+.navbar .menu.active {
+  display: flex;
+}
+
+.navbar .menu li {
+  text-align: center;
+}
+
+.navbar .menu a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  display: block;
+}
+
+.navbar .menu a:hover {
+  background-color: #333;
+  border-radius: 5px;
+}
+
+/* Hamburger menu styles */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+/* Show the hamburger menu in mobile view */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+}
