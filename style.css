@@ -14,7 +14,7 @@ body {
 }
 
 nav {
-  background: #0082e6;
+  background: #00D9FF;
   height: 50px;
   width: 100%;
 }
@@ -84,6 +84,7 @@ a:hover {
 
   label.logo {
     font-size: 22px;
+    
   }
 
   ul {
@@ -147,9 +148,9 @@ a:hover {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 1.5rem;
-            max-width: 1200px;
+            max-width: 1500px;
             margin: 0 auto;
-			padding-top:20px;
+			padding-top:10px;
         }
 
         .education-card {
@@ -162,11 +163,11 @@ a:hover {
         }
 		 .education-card2 {
             padding: 1rem;
-            /*border: 1px solid #ddd;*/
+            /*border: 1px solid #ddd; */
             border-radius: 8px;
             text-align: left;
             transition: box-shadow 0.3s ease;
-			padding-top:20px;
+			padding-top:100px;
         }
 
         .education-card:hover {
@@ -179,7 +180,7 @@ a:hover {
 
         /* Footer */
         footer {
-            background: #0d6efd;
+            background: #00D9FF;
             color: white;
             text-align: center;
             padding: 1rem 0;
@@ -501,3 +502,34 @@ body {
 }
 
 .btn{ color:#FFF}
+
+.profile-pic {
+  margin: 20px auto;
+  width: 300px;
+  height: 300px;
+  background-color: #00d9ff;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.social-icons {
+  margin: 1rem 0;
+  align-content: center;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #00d9ff;
+  font-size: 1.5rem;
+}
+.highlight {
+  color: #00D9FF;}
