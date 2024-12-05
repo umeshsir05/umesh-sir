@@ -175,7 +175,7 @@ a:hover {
         }
 
         .education-card h3 {
-            color: #0d6efd;
+            color:#0CC;
         }
 
         /* Footer */
@@ -220,7 +220,7 @@ a:hover {
         }
 
         .experience-card h3 {
-            color: #0d6efd;
+            color: #0CC;
         }
 
         .experience-card p {
@@ -260,7 +260,7 @@ a:hover {
 
         .skill-card h3 {
             margin-bottom: 0.5rem;
-            color: #0d6efd;
+            color: #0CC;
         }
 
   /* Contact Section */
@@ -354,11 +354,11 @@ a:hover {
         }
 
         .about h3 {
-            color: #0d6efd;
+            color:#0CC;
             margin-bottom: 1rem;
         }
 
-       
+ .f_color{#0CC;}      
 
 /* index style.css */
 body {
@@ -532,4 +532,5 @@ body {
   font-size: 1.5rem;
 }
 .highlight {
-  color: #00D9FF;}
+  color: #00D9FF; font-size:30px;}
+.text-size{ font-size:16px;}
