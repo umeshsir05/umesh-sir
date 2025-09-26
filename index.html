@@ -5,12 +5,17 @@
   <meta charset="utf-8">
   <title>My portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS File -->
   <link rel="stylesheet" href="style.css">
+
   <!-- Font Awesome Link for Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+  <!-- Navigation Bar -->
   <nav>
     <!-- Checkbox for toggling menu -->
     <input type="checkbox" id="check">
@@ -21,62 +26,60 @@
     </label>
 
     <!-- Site logo -->
-    <label class="logo"> Portfolio</label>
+    <label class="logo">Portfolio</label>
 
     <!-- Navigation links -->
     <ul>
-     <li><a href="index.html">Home</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                           </ul>
+      <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="education.html"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+      <li><a href="experience.html"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+      <li><a href="skills.html"><i class="fa-solid fa-laptop-code"></i> Skills</a></li>
+      <li><a href="about.html"><i class="fa-solid fa-user"></i> About</a></li>
+      <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+    </ul>
   </nav>
 
-    <!--
-    <!-- Education Section -->
-    <section class="education">
-       <!-- <h2>My Education</h2>
-      -->
-
-        <div class="education-grid2">
-            <!-- Card 1 -->
-            <div class="education-card2">
-                <h6>Hello, It's Me</h6>
-          <h1 class="highlight">Umesh Banjare</h1>
-          <h3>and I'm a <span class="highlight">Teacher & Web Developer</span></h3>
-          <p>
-            Passionate about education, programming, and learning new skills. Experienced in IT, web development, and teaching.
-          </p>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="education-card2">
-              <main>
-      <div class="profile-pic">
-        <img src="logo.png" alt="Umesh Banjare">
+  <!-- Education Section -->
+  <section class="education">
+    <div class="education-grid2">
+      <!-- Card 1 -->
+      <div class="education-card2">
+        <h6>Hello, It's Me</h6>
+        <h1 class="highlight">Umesh Banjare</h1>
+        <h3>and I'm a <span class="highlight">Teacher & Web Developer</span></h3>
+        <p>
+          Passionate about education, programming, and learning new skills. Experienced in IT, web development, and teaching.
+        </p>
       </div>
-        <div class="social-icons">
-        <a href="#"><i class="icon"><img src="instagram.png" height="40px" width="40"></i></a>
-        <a href="https://www.facebook.com/umesh.banjare"><i class="icon"> <img src="facebook.png" height="40px" width="40"></i></a>
-        <a href="https://youtube.com/@banjaretutorial?si=WlaWNMkpxtAAyU-7"><i class="icon"><img src="youtube.png" height="40px" width="40"></i></a>
-        <a href="#"><i class="icon"><img src="telegram.png" height="40px" width="40"></i></a>
-      </div>
-      <button onclick="window.location.href='https://drive.google.com/file/d/1JFn6cEn9HDzNrQxjTm4DADUuKt0x62w1/view?usp=drivesdk';" style="padding: 10px 20px; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer;">Download CV</button>
-    </main>
-            </div>
 
-           
-        </div>
-    
+      <!-- Card 2 -->
+      <div class="education-card2">
+        <main>
+          <div class="profile-pic">
+            <img src="logo.png" alt="Umesh Banjare">
+          </div>
+
+          <!-- Social Icons with Font Awesome -->
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://www.facebook.com/umesh.banjare"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="https://youtube.com/@banjaretutorial?si=WlaWNMkpxtAAyU-7"><i class="fab fa-youtube fa-2x"></i></a>
+            <a href="#"><i class="fab fa-telegram fa-2x"></i></a>
+          </div>
+
+          <!-- CV Download Button -->
+          <button onclick="window.location.href='https://drive.google.com/file/d/1JFn6cEn9HDzNrQxjTm4DADUuKt0x62w1/view?usp=drivesdk';"
+            style="padding: 10px 20px; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer;">
+            <i class="fa-solid fa-download"></i> Download CV
+          </button>
+        </main>
+      </div>
+    </div>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; <b>2024 Umesh Kumar. All rights reserved.</b></p>
+      <p>&copy; <b>2024 Umesh Kumar. All rights reserved.</b></p>
     </footer>
-
   </section>
 </body>
-
 </html>
