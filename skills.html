@@ -3,14 +3,19 @@
 
 <head>
   <meta charset="utf-8">
-  <title>About Me</title>
+  <title>My Skills</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS File -->
   <link rel="stylesheet" href="style.css">
-  <!-- Font Awesome Link for Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <!-- Font Awesome v6 Link for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+  <!-- Navigation Bar -->
   <nav>
     <!-- Checkbox for toggling menu -->
     <input type="checkbox" id="check">
@@ -21,77 +26,72 @@
     </label>
 
     <!-- Site logo -->
-    <label class="logo"> <img src="logo.png" height="50px" width="50"></label>
+    <label class="logo">
+      <img src="logo.png" height="50px" width="50" alt="Umesh Logo">
+    </label>
 
     <!-- Navigation links -->
     <ul>
-     <li><a href="index.html">Home</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                           </ul>
+      <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="education.html"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+      <li><a href="experience.html"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+      <li><a href="skills.html"><i class="fa-solid fa-laptop-code"></i> Skills</a></li>
+      <li><a href="about.html"><i class="fa-solid fa-user"></i> About</a></li>
+      <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+    </ul>
   </nav>
 
-  <!-- Section for image -->
- <!-- Skills Section -->
-    <section class="skills">
-        <h2>My Skills</h2>
-        <p>Below is a detailed overview of my technical, teaching, and personal development skills:</p>
+  <!-- Skills Section -->
+  <section class="skills">
+    <h2><i class="fa-solid fa-laptop-code"></i> My Skills</h2>
+    <p>Below is a detailed overview of my technical, teaching, and personal development skills:</p>
 
-        <div class="skills-grid">
-            <!-- Skill 1 -->
-            <div class="skill-card">
-                <h3>Technical Skills</h3>
-               <h4>Proficient in-</h4>
-                
-                    <p><strong>Programming:</strong>C, C++, PHP, Python</p>
-                    <p><strong>Web Development:</strong>Laravel, HTML, CSS, JavaScript</p>
-                    <p><strong>Database Management:</strong>MySQL</p>
-                    <p><strong>IT Tools:</strong>MS Office Suite, Operating Systems</p>
-                
-            </div>
+    <div class="skills-grid">
+      <!-- Skill 1 -->
+      <div class="skill-card">
+        <h3><i class="fa-solid fa-microchip"></i> Technical Skills</h3>
+        <h4>Proficient in-</h4>
+        <p><i class="fa-solid fa-code"></i> <strong>Programming:</strong> C, C++, PHP, Python</p>
+        <p><i class="fa-solid fa-globe"></i> <strong>Web Development:</strong> Laravel, HTML, CSS, JavaScript</p>
+        <p><i class="fa-solid fa-database"></i> <strong>Database Management:</strong> MySQL</p>
+        <p><i class="fa-solid fa-desktop"></i> <strong>IT Tools:</strong> MS Office Suite, Operating Systems</p>
+      </div>
 
-            <!-- Skill 2 -->
-            <div class="skill-card">
-                <h3>Teaching Expertise</h3>
-                <strong>Experienced in:</strong>
-                
-                    <p>Delivering IT lessons for Class 9 (CBSE IT 402)</p>
-                    <p>Making technology accessible for beginners</p>
-                    <p>Fostering a student-centric, interactive learning environment</p>
-                    <p>Utilizing DElEd teaching methodologies</p>
-                
-            </div>
+      <!-- Skill 2 -->
+      <div class="skill-card">
+        <h3><i class="fa-solid fa-chalkboard-teacher"></i> Teaching Expertise</h3>
+        <strong>Experienced in:</strong>
+        <p><i class="fa-solid fa-book-open"></i> Delivering IT lessons for Class 9 (CBSE IT 402)</p>
+        <p><i class="fa-solid fa-lightbulb"></i> Making technology accessible for beginners</p>
+        <p><i class="fa-solid fa-users"></i> Fostering a student-centric, interactive learning environment</p>
+        <p><i class="fa-solid fa-graduation-cap"></i> Utilizing DElEd teaching methodologies</p>
+      </div>
 
-            <!-- Skill 3 -->
-            <div class="skill-card">
-                <h3>Communication Skills</h3>
-                <strong>Currently learning:</strong>
-                <ul>
-                    <li>Spoken English for enhanced communication</li>
-                </ul>
-                <p>Strong written and verbal communication in both Hindi and English.</p>
-            </div>
+      <!-- Skill 3 -->
+      <div class="skill-card">
+        <h3><i class="fa-solid fa-comments"></i> Communication Skills</h3>
+        <strong>Currently learning:</strong>
+        <ul>
+          <li><i class="fa-solid fa-language"></i> Spoken English for enhanced communication</li>
+        </ul>
+        <p><i class="fa-solid fa-pen-nib"></i> Strong written and verbal communication in both Hindi and English.</p>
+      </div>
 
-            <!-- Skill 4 -->
-            <div class="skill-card">
-                <h3>Personal Development</h3>
-                <strong>Passionate about:</strong>
-                
-                    <p>Continuous learning and upskilling</p>
-                    <p>Reading books on self-improvement and technology</p>
-                    <p>Engaging in music and sports for a balanced life</p>
-                
-            </div>
-        </div>
-    </section>
+      <!-- Skill 4 -->
+      <div class="skill-card">
+        <h3><i class="fa-solid fa-seedling"></i> Personal Development</h3>
+        <strong>Passionate about:</strong>
+        <p><i class="fa-solid fa-book"></i> Continuous learning and upskilling</p>
+        <p><i class="fa-solid fa-brain"></i> Reading books on self-improvement and technology</p>
+        <p><i class="fa-solid fa-futbol"></i> Engaging in music and sports for a balanced life</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Umesh Kumar. All rights reserved.</p>
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Umesh Kumar. All rights reserved.</p>
+  </footer>
 </body>
 
 </html>
