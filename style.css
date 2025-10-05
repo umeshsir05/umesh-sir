@@ -1,4 +1,6 @@
-/* Basic Reset */
+/* ===========================
+   🌐 BASIC RESET & BODY STYLE
+   =========================== */
 * {
     margin: 0;
     padding: 0;
@@ -11,44 +13,64 @@ body {
     color: white;
 }
 
-/* Header Section */
+/* ===========================
+   🔹 HEADER SECTION
+   =========================== */
 header {
     width: 100%;
     background-color: #00bfff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 12px 25px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
     color: white;
+    letter-spacing: 1px;
 }
 
+/* ===========================
+   🔹 NAVIGATION MENU
+   =========================== */
 nav {
     display: flex;
-    gap: 20px;
+    gap: 25px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     font-weight: 500;
+    font-size: 16px;
+    transition: 0.3s;
 }
 
 nav a:hover {
     color: #333;
+    background: white;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
+/* ===========================
+   🔹 MENU ICON (MOBILE)
+   =========================== */
 .menu-icon {
     display: none;
-    font-size: 26px;
+    font-size: 28px;
     cursor: pointer;
+    color: white;
 }
 
-/* Home Section */
+/* ===========================
+   🏠 HOME SECTION
+   =========================== */
 .home {
     display: flex;
     flex-direction: column;
@@ -56,33 +78,42 @@ nav a:hover {
     justify-content: center;
     text-align: center;
     min-height: 90vh;
+    padding: 40px 20px;
 }
 
 .home h4 {
     font-size: 18px;
     color: #ddd;
+    margin-bottom: 10px;
 }
 
 .home h1 {
-    font-size: 38px;
+    font-size: 42px;
     color: #00bfff;
+    margin-bottom: 10px;
 }
 
 .home h3 {
     font-size: 22px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    color: white;
 }
 
 .home h3 span {
     color: #00bfff;
+    font-weight: bold;
 }
 
 .home p {
     font-size: 16px;
-    max-width: 600px;
+    max-width: 650px;
     color: #ccc;
+    line-height: 1.6;
 }
 
+/* ===========================
+   🖼 PROFILE IMAGE
+   =========================== */
 .profile {
     margin-top: 40px;
 }
@@ -93,9 +124,17 @@ nav a:hover {
     border-radius: 50%;
     border: 5px solid #00bfff;
     object-fit: cover;
+    transition: 0.3s;
 }
 
-/* Responsive Design */
+.profile img:hover {
+    transform: scale(1.05);
+    border-color: white;
+}
+
+/* ===========================
+   📱 RESPONSIVE DESIGN
+   =========================== */
 @media (max-width: 768px) {
     nav {
         display: none;
@@ -103,13 +142,41 @@ nav a:hover {
         background-color: #00bfff;
         width: 100%;
         text-align: center;
+        padding: 10px 0;
     }
 
     nav.active {
         display: flex;
     }
 
+    nav a {
+        padding: 10px 0;
+        font-size: 18px;
+    }
+
     .menu-icon {
         display: block;
+    }
+}
+
+/* ===========================
+   ⚙️ EXTRA SMALL DEVICES
+   =========================== */
+@media (max-width: 480px) {
+    .home h1 {
+        font-size: 32px;
+    }
+
+    .home h3 {
+        font-size: 18px;
+    }
+
+    .home p {
+        font-size: 14px;
+    }
+
+    .profile img {
+        width: 180px;
+        height: 180px;
     }
 }
