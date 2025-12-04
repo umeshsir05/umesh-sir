@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Logo 50x50</title>
+
+<style>
+  body{
+    margin:0;
+    background:transparent;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+  }
+
+  .logo{
+    width:50px;
+    height:50px;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+
+  .bt{
+    font-size:28px;
+    font-weight:900;
+    background:linear-gradient(45deg, #ff0000, #ffcc00);
+    -webkit-background-clip:text;
+    color:transparent;
+    position:relative;
+    letter-spacing:1px;
+    text-shadow:0 0 4px rgba(255,80,0,0.8);
+  }
+
+  /* Shine animation */
+  .bt::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-120%;
+    width:40%;
+    height:100%;
+    background:linear-gradient(120deg, transparent, rgba(255,255,255,0.9), transparent);
+    transform:skewX(-20deg);
+    animation:shine 2.5s infinite;
+  }
+
+  @keyframes shine{
+    0%{ left:-130%; }
+    50%{ left:130%; }
+    100%{ left:-130%; }
+  }
+</style>
+
+</head>
+<body>
+
+<div class="logo">
+  <div class="bt">UB</div>
+</div>
+</body>
+</html>
